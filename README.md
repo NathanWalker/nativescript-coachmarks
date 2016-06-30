@@ -202,7 +202,7 @@ Used to define your marks.
 Property |  Description
 -------- | ---------
 `position: any` | An iOS `CGRect` position object.
-`caption: string` | Turns on some helpful logging if you have trouble setting things up.
+`caption: string` | Your caption label text.
 `shape: number` | Use `TNSCoachMark.SHAPES`. Supports: TOP, CENTER, BOTTOM.
 `labelPosition: number` | Use `TNSCoachMark.LABEL_POSITIONS`. Supports: BOTTOM, LEFT, TOP, RIGHT, RIGHT_BOTTOM.
 `labelAlignment: number` | Use `TNSCoachMark.LABEL_ALIGNMENTS`. Supports: CENTER, LEFT, RIGHT.
