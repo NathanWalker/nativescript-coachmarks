@@ -170,10 +170,10 @@ Property |  Description
 
 Method |  Description
 -------- | ---------
-* `TNSCoachMarks.start(marks: Array<TNSCoachMark>, options?: ICoachMarkOptions, instance?: TNSCoachMarks): void` | Used to start the coachmarks.
-* `TNSCoachMarks.HAS_SHOWN(): boolean` | Whether coachmarks have been shown.
-* `TNSCoachMarks.PERSIST(): void` | Simply persists `true` using the `TNSCoachMarks.APP_SETTINGS_KEY`. You normally don't use this directly but is rather used internally when using the `persist` option when calling `start`.
-* `TNSCoachMarks.RESET(): void` | Used to clear persisted value that marks had been shown.
+`TNSCoachMarks.start(marks: Array<TNSCoachMark>, options?: ICoachMarkOptions, instance?: TNSCoachMarks): void` | Used to start the coachmarks.
+`TNSCoachMarks.HAS_SHOWN(): boolean` | Whether coachmarks have been shown.
+`TNSCoachMarks.PERSIST(): void` | Simply persists `true` using the `TNSCoachMarks.APP_SETTINGS_KEY`. You normally don't use this directly but is rather used internally when using the `persist` option when calling `start`.
+`TNSCoachMarks.RESET(): void` | Used to clear persisted value that marks had been shown.
 
 Options:
 
