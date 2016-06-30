@@ -1,0 +1,51 @@
+{
+  "name": "nativescript-coachmarks",
+  "version": "1.0.0",
+  "description": "Display user coach marks with a couple of shape cutouts over an existing UI for NativeScript.",
+  "main": "coachmarks.js",
+  "nativescript": {
+    "platforms": {
+      "android": "2.0.0",
+      "ios": "2.0.1"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "demo.ios": "npm run preparedemo && cd demo && tns emulate ios",
+    "demo.android": "npm run preparedemo && cd demo && tns run android",
+    "preparedemo": "npm run build && cd demo && tns plugin remove nativescript-coachmarks && tns plugin add .. && tns install",
+    "setup": "cd demo && npm install && cd .. && npm run build && cd demo && tns plugin add .. && cd .."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NathanWalker/nativescript-coachmarks.git"
+  },
+  "keywords": [
+    "NativeScript",
+    "iOS",
+    "coachmarks",
+    "instructions",
+    "guide",
+    "intro"
+  ],
+  "author": {
+    "name": "Nathan Walker",
+    "email": "walkerrunpdx@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/NathanWalker/nativescript-coachmarks/issues"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/NathanWalker/nativescript-coachmarks/blob/master/LICENSE"
+  },
+  "homepage": "https://github.com/NathanWalker/nativescript-coachmarks",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "tns-platform-declarations": "^2.0.0",
+    "typescript": "^1.8.10"
+  },
+  "dependencies": {
+    "tns-platform-declarations": "^2.0.0"
+  }
+}

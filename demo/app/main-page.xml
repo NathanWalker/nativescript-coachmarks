@@ -1,0 +1,17 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <Page.actionBar>
+      <ActionBar title="Coach Marks for NativeScript" icon="">
+        <ActionBar.actionItems>
+              <ActionItem text="Menu" />
+          </ActionBar.actionItems>
+      </ActionBar>
+  </Page.actionBar>
+  <StackLayout>
+    <Button text="Customer Listing" class="message msg" id="first" />
+    <Label text="1" class="message msg2" textWrap="true" id="second" />
+    <Button text="Account Settings" class="message msg msg3" id="third" />
+
+    <Button text="Start with Custom Options" tap="{{startWithOptions}}" class="message msg msg4" id="fourth" />
+    
+  </StackLayout>
+</Page>
