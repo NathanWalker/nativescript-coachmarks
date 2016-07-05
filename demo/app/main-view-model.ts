@@ -1,7 +1,7 @@
 import {Observable} from 'data/observable';
 import {Color} from 'color';
 import {topmost} from 'ui/frame';
-import {TNSCoachMarks, TNSCoachMark, ICoachMarkOptions} from 'nativescript-coachmarks/coachmarks.ios';
+import {TNSCoachMarks, TNSCoachMark, ICoachMarkOptions} from 'nativescript-coachmarks';
 
 declare var CGRectMake, UIScreen, UIColor;
 
