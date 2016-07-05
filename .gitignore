@@ -8,4 +8,5 @@ demo/platforms
 demo/node_modules
 demo/lib
 node_modules
+!index.d.ts
 !demo/references.d.ts
