@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Display user coach marks with a couple of shape cutouts over an existing UI for NativeScript.",
   "main": "coachmarks.js",
+  "typings": "coachmarks.d.ts",
   "nativescript": {
     "platforms": {
       "android": "2.0.0",
