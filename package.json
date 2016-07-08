@@ -35,13 +35,12 @@
   "bugs": {
     "url": "https://github.com/NathanWalker/nativescript-coachmarks/issues"
   },
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/NathanWalker/nativescript-coachmarks/blob/master/LICENSE"
-  },
+  "license": "SEE LICENSE IN LICENSE",
   "homepage": "https://github.com/NathanWalker/nativescript-coachmarks",
   "readmeFilename": "README.md",
   "devDependencies": {
+    "tns-core-modules": "^2.1.0",
+    "tns-platform-declarations": "^2.0.0",
     "typescript": "^1.8.10"
   }
 }
