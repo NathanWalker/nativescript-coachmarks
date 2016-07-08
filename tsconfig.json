@@ -10,9 +10,9 @@
     },
     "files": [
       "demo/node_modules/tns-core-modules/tns-core-modules.d.ts",
-      "node_modules/tns-platform-declarations/android17.d.ts",
-      "node_modules/tns-platform-declarations/ios.d.ts",
-      "node_modules/tns-platform-declarations/org.nativescript.widgets.d.ts",
+      "demo/node_modules/tns-platform-declarations/android17.d.ts",
+      "demo/node_modules/tns-platform-declarations/ios.d.ts",
+      "demo/node_modules/tns-platform-declarations/org.nativescript.widgets.d.ts",
       "coachmarks.ios.ts"
     ],
     "compileOnSave": false
