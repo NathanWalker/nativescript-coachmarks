@@ -13,7 +13,8 @@
       "node_modules/tns-platform-declarations/android17.d.ts",
       "node_modules/tns-platform-declarations/ios.d.ts",
       "node_modules/tns-platform-declarations/org.nativescript.widgets.d.ts",
-      "coachmarks.ios.ts"
+      "coachmarks.ios.ts",
+      "coachmarks.android.ts"
     ],
     "compileOnSave": false
 }

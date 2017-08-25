@@ -8,12 +8,50 @@ Based on [MPCoachMarks](https://github.com/bubudrc/MPCoachMarks).
 npm install nativescript-coachmarks --save
 ```
 
-![demo](screenshots/coachmarks.gif)
-
+IOS |  Android
+-------- | ---------
+![demo](screenshots/coachmarks.gif) | ![demo](screenshots/CoachMarks_Android.gif)
 * [Usage](#usage)
 * [Docs](#tnscoachmarks)
 
 # Usage
+
+### Android
+
+
+```
+import {TNSCoachMarks, TNSCoachMark} from 'nativescript-coachmarks';
+
+// assuming page is defined
+let AndroidButton = page.getViewById('my-button')
+let AndroidLabel = page.getViewById('my-label');
+let cm = new TNSCoachMarks();
+cm.initEvents(); //If you want events
+
+cm.events.on('click', (eventData) => {
+  // clicked on item at step index: eventData.data.index
+});
+cm.events.on('cleanup', (eventData) => {
+  // clean up any instances in your implementation
+});
+cm.events.on('navigate', (eventData) => {
+  // navigated to index
+});
+
+let marks = [
+  new TNSCoachMark({
+    caption: '1. My Button.',
+    view: AndroidButton
+  }),
+  new TNSCoachMark({
+    caption: '2. My Label.',
+    view: AndroidLabel
+  })
+];
+
+cm.start(marks);
+```
+
 
 ### Simple
 
@@ -207,6 +245,7 @@ Property |  Description
 `labelPosition: number` | Use `TNSCoachMark.LABEL_POSITIONS`. Supports: BOTTOM, LEFT, TOP, RIGHT, RIGHT_BOTTOM.
 `labelAlignment: number` | Use `TNSCoachMark.LABEL_ALIGNMENTS`. Supports: CENTER, LEFT, RIGHT.
 `showArrow: boolean` | Show arrow or not.
+`view:View` | View to highlight . Android only
 
 ## Why the TNS prefixed name?
 

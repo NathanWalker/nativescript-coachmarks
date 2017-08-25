@@ -2,16 +2,17 @@
     "compilerOptions": {
         "module": "commonjs",
         "target": "es5",
-        "sourceMap": true,
         "experimentalDecorators": true,
         "noEmitHelpers": true
     },
     "files": [
-      "node_modules/tns-core-modules/tns-core-modules.d.ts",
-      "node_modules/tns-platform-declarations/android17.d.ts",
-      "node_modules/tns-platform-declarations/ios.d.ts",
-      "node_modules/tns-platform-declarations/org.nativescript.widgets.d.ts",
-      "app/app.ts",
-      "app/main-page.ts"
+        "node_modules/tns-core-modules/tns-core-modules.d.ts",
+        "node_modules/tns-platform-declarations/android17.d.ts",
+        "node_modules/tns-platform-declarations/ios.d.ts",
+        "node_modules/tns-platform-declarations/org.nativescript.widgets.d.ts",
+        "app/app.ts",
+        "app/main-page.ts",
+        "app/main-view-model.android.ts",
+        "app/main-view-model.ios.ts"
     ]
 }
