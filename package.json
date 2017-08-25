@@ -1,18 +1,19 @@
 {
   "name": "nativescript-coachmarks",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Display user coach marks with a couple of shape cutouts over an existing UI for NativeScript.",
-  "main": "coachmarks.js",
-  "typings": "coachmarks.d.ts",
+  "main": "coachmarks",
+  "typings": "index.d.ts",
   "nativescript": {
     "platforms": {
-      "ios": "2.2.1"
+      "ios": "2.1.1",
+      "android": "2.1.1"
     }
   },
   "scripts": {
     "build": "tsc",
-    "demo.ios": "npm run preparedemo && cd demo && tns emulate ios",
-    "demo.android": "npm run preparedemo && cd demo && tns run android",
+    "demo.ios": "npm run preparedemo && cd demo && tns run ios --emulator",
+    "demo.android": "npm run preparedemo && cd demo && tns run android --emulator",
     "preparedemo": "npm run build && cd demo && tns plugin remove nativescript-coachmarks && tns plugin add .. && tns install",
     "setup": "npm i && cd demo && npm install && cd .. && npm run build && cd demo && tns plugin add .. && cd .."
   },
@@ -39,8 +40,8 @@
   "homepage": "https://github.com/NathanWalker/nativescript-coachmarks",
   "readmeFilename": "README.md",
   "devDependencies": {
-    "tns-core-modules": "^2.1.0",
-    "tns-platform-declarations": "^2.0.0",
-    "typescript": "^1.8.10"
+    "tns-core-modules": "~3.1.0",
+    "tns-platform-declarations": "~3.1.0",
+    "typescript": "~2.3.0"
   }
 }

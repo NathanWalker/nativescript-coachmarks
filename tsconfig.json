@@ -1,19 +1,29 @@
 {
     "compilerOptions": {
-        "target": "es5",
         "module": "commonjs",
+        "target": "es5",
+        "declaration": true,
         "removeComments": true,
         "experimentalDecorators": true,
-        "sourceMap": true,
-        "declaration": true,
-        "noEmitOnError": false
+        "emitDecoratorMetadata": true,
+        "noEmitHelpers": true,
+        "noEmitOnError": true,
+        "skipLibCheck": true,
+        "lib": [
+            "es6",
+            "dom",
+            "es2015.iterable"
+        ],
+        "baseUrl": ".",
+        "paths": {
+            "*": [
+                "./node_modules/tns-core-modules/*",
+                "./node_modules/*"
+            ]
+        }
     },
-    "files": [
-      "node_modules/tns-core-modules/tns-core-modules.d.ts",
-      "node_modules/tns-platform-declarations/android17.d.ts",
-      "node_modules/tns-platform-declarations/ios.d.ts",
-      "node_modules/tns-platform-declarations/org.nativescript.widgets.d.ts",
-      "coachmarks.ios.ts"
-    ],
-    "compileOnSave": false
+    "exclude": [
+        "demo",
+        "platforms"
+    ]
 }

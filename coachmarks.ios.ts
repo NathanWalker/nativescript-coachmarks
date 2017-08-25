@@ -1,6 +1,6 @@
-import {Observable, EventData} from 'data/observable';
-import {topmost} from 'ui/frame';
-import * as appSettings from 'application-settings';
+import {Observable, EventData} from 'tns-core-modules/data/observable';
+import {topmost} from 'tns-core-modules/ui/frame';
+import * as appSettings from 'tns-core-modules/application-settings';
 
 declare var MPCoachMarks: any, CGRectMake: any, UIScreen: any, SHAPE_CIRCLE: any, LABEL_POSITION_BOTTOM: any, LABEL_ALIGNMENT_RIGHT: any, SHAPE_SQUARE: any, NSNumber: any, NSDictionary: any, NSMutableDictionary: any, MaskShape: any, LabelPosition: any, LabelAligment: any, NSValue: any, ContinueLocation: any, NSUserDefaults, MPCoachMarksViewDelegate;
 

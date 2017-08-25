@@ -1,9 +1,14 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
   <Page.actionBar>
-      <ActionBar title="Coach Marks for NativeScript" icon="">
-        <ActionBar.actionItems>
-              <ActionItem text="Menu" />
-          </ActionBar.actionItems>
+      <ActionBar title="Coach Marks for NativeScript">
+        <!-- <ActionBar.actionItems>
+              <ActionItem id="menu" text="Menu" />
+          </ActionBar.actionItems> -->
+          <ActionBar.titleView>
+          <GridLayout paddingLeft="5" paddingRight="5">
+          <Label horizontalAlignment="right" id="menu" text="Menu"/>
+          </GridLayout>
+          </ActionBar.titleView>
       </ActionBar>
   </Page.actionBar>
   <StackLayout>
