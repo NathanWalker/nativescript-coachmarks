@@ -1,0 +1,11 @@
+android {
+    productFlavors {
+        "nativescript-coachmarks" {
+            dimension "nativescript-coachmarks"
+        }
+    }
+}
+
+dependencies {
+    compile 'com.github.amlcurran.showcaseview:library:5.4.3'
+}
