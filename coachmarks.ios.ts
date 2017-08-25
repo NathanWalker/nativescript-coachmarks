@@ -103,6 +103,7 @@ export class TNSCoachMarks extends NSObject {
   };
 
   public events: Observable;  
+  private _willNavigateEvent: any;
   private _navigateEvent: any;
   private _clickEvent: any;
   private _cleanupEvent: any;
@@ -204,6 +205,11 @@ export class TNSCoachMarks extends NSObject {
 
   public initEvents() {
     this.events = new Observable();
+    this._willNavigateEvent = {
+      eventName: 'willNavigate',
+      object: this,
+      data: {}
+    };
     this._navigateEvent = {
       eventName: 'navigate',
       object: this,
@@ -222,6 +228,19 @@ export class TNSCoachMarks extends NSObject {
   }
 
   // Delegate Methods (if instance is used)
+  public coachMarksViewWillNavigateToIndex(coachMarks: any, index: number) {
+    if (TNSCoachMarks.DEBUG)
+      console.log(`will navigate to index: ${index}`);
+    
+    if (this.events) {
+      this._willNavigateEvent.data = {
+        instance: coachMarks,
+        index: index
+      }
+      this.events.notify(this._willNavigateEvent);
+    }
+  }
+
   public coachMarksViewDidNavigateToIndex(coachMarks: any, index: number) {
     if (TNSCoachMarks.DEBUG)
       console.log(`navigated to index: ${index}`);
