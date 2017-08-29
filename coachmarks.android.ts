@@ -85,6 +85,11 @@ export class TNSCoachMarks {
     private nextView = 0;
     private marks: any[];
 
+    setStyle(style: any) {
+        if (this._showCase) {
+            this._showCase.setStyle(style);
+        }
+    }
     setTitle(title: string) {
         if (this._showCase) {
             this._showCase.setContentTitle(title);
