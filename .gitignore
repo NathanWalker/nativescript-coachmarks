@@ -8,5 +8,6 @@ demo/platforms
 demo/node_modules
 demo/lib
 node_modules
-!coachmarks.d.ts
+!index.d.ts
 !demo/references.d.ts
+package-lock.json

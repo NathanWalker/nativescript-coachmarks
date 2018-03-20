@@ -2,5 +2,6 @@ demo/
 *.png
 *.log
 *.ts
-!*.d.ts
+!index.d.ts
 screenshots
+package-lock.json
