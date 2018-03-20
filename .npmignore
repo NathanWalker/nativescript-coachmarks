@@ -4,4 +4,5 @@ demo/
 *.ts
 !index.d.ts
 screenshots
+tsconfig.json
 package-lock.json
