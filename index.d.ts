@@ -36,6 +36,7 @@ export interface ITNSCoachMark {
     labelPosition?: number;
     labelAlignment?: number;
     showArrow?: boolean;
+    view?: any;
 }
 export interface ICONTINUE_LOCATION {
     TOP: number;
@@ -49,6 +50,7 @@ export declare class TNSCoachMark {
     labelPosition: number;
     labelAlignment: number;
     showArrow: boolean;
+    view?: any;
     static SHAPES: ICoachMarkShape;
     static LABEL_POSITIONS: ICoachMarkLabelPosition;
     static LABEL_ALIGNMENTS: ICoachMarkLabelAlignment;
