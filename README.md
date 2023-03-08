@@ -1,3 +1,5 @@
+Plugin source has been moved [here]([nativescript-coachmarks](https://github.com/nstudio/nativescript-ui-kit/tree/main/packages/nativescript-coachmarks#readme))
+<hr>
 NativeScript plugin to display user coach marks utilizing shape cutouts over an existing UI. This approach leverages your actual UI as part of the onboarding process for your user.
 
 Based on [MPCoachMarks](https://github.com/bubudrc/MPCoachMarks).
